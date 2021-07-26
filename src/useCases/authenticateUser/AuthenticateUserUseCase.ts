@@ -27,6 +27,7 @@ class AuthenticateUserUseCase {
 
     // gerar token do usuário
     const key = process.env.TOKEN_KEY
+
     const token = sign({}, key, {
       subject: userAlreadyExists.id,
       expiresIn: '20s'
