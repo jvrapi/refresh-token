@@ -1,5 +1,5 @@
 <h1 align="center"> 
-Node-CSV
+Refresh Token
 </h1>
 
 <p align="center">
@@ -10,12 +10,12 @@ Node-CSV
 </p>
 
 ## 📖 About
-A simple project for reading a CSV file and insert the data in database.
-
+An example of application using refresh token with database.
 ## 🚀 Technologies
 - [Express](https://expressjs.com/pt-br/)
-- [Multer](https://github.com/expressjs/multer)
+- [JSON Web Token](https://github.com/auth0/node-jsonwebtoken)
 - [Prisma](https://www.prisma.io/)
+- [DayJs](https://day.js.org/)
 - [Postgres SQL](https://www.postgresql.org/)
 
 
@@ -38,7 +38,7 @@ $ yarn dev or npm run dev
 
 ```
 
-The database url must be configured into `.env` file. Just rename the `.env.example` file to `.env` and configure your database url.
+The database url must be configured into `.env` file. You need configure the secret key used in [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) too. Just rename the `.env.example` file to `.env` and configure your database url.
 
 ## 📝 License
 This project is under the MIT license. See the [LICENSE](LICENSE) for more information.
